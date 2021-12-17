@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+
+    <style>
+        nav {
+            background: #5f3b8e;
+        }
+        ol {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            list-style-type: none;
+            color: white;
+        }
+         li {
+           display: inline-block;
+            cursor: pointer;
+          padding: 10px;
+            text-align: center;
+        }
+         li:hover {
+            background: #bab4b4;
+        }
+        .child-menu, 
+        .grand-child-menu {
+            display: none;
+            position: absolute;
+            background: #5f3b8e;
+        }
+        .child-menu li {
+            text-align: left;
+        }
+        .drop-menu{
+            position: relative;
+        }
+        .drop-menu:hover .child-menu {
+            display: list-item;
+        }
+        .grand-child-menu{
+            left:130px;
+            padding: 5px;
+        }
+        .child-drop-menu:hover .grand-child-menu{
+            display: list-item;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ol>
+            <li>Home</li>
+            <li class="drop-menu">
+                Provinces
+                <ol class="child-menu">
+                    <li class="child-drop-menu">
+                        Punjab
+                        <ol class="grand-child-menu">
+                            <li>Faisalabad</li>
+                            <li>Gujranwala</li>
+                            <li>Multan</li>
+                            <li>Rawalpindi</li>
+                        </ol>
+                    
+                    </li>
+                    <li>NWFP</li>
+                    <li>Balochistan</li>
+                    <li>Sindh</li>
+                </ol>
+
+            </li>
+            <li>Contact</li>
+            <li>About</li>
+        </ol>
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* jis query ko jitni zada info do gyee code usko run kry gaa */
+/* div#a1.city{
+    color: chartreuse;
+} */
+
+/* div#a1.city[class]{
+    color: coral;
+} */
+        /* attribute sy styling krna */
+        /* [class]{
+            color: red;
+        } */
+
+/* class k attribute main jis k bh end py (good) hoga uska color change krdy gaaa */
+        /* [class$=good]{
+            color:red;
+        } */
+
+        /* code main jaha kahee bh class k attribute main (good) likhaa hogaa uskaa color change krdy gaa */
+        /* [class~=good]{
+            color: red;
+        } */
+
+        /* important for periority to given tag */
+        /* div{
+            color: blue !important;
+        } */
+
+/* jis class k attribute main bh start main (good) likhaa hogaa code us py styling krdy gaa */
+        /* [class^=good]{
+            color: red;
+        } */
+
+        strong{
+            color: red;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <strong id="a1" class="city">this is styling</strong>
+    <!-- <div id="a1" class="that is good">this is tag</div>
+    <div class="this is good">this is tag</div> -->
+</body>
+</html>

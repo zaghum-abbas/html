@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .road{
+            width: 100%;
+            height: 150px;
+            position: absolute;
+        }
+        .main{
+            animation: MyCar 6s linear 0s ;
+            position: absolute;
+        }
+        .car{
+            position: absolute;
+            width: 300px;
+            height: 120px;
+            top: 15px;
+        }
+        .wheel{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            animation: Rotation 5s linear 0s infinite ;
+        }
+        .wheel1{
+            top: 80px;
+            left: 23px;
+        }
+        .wheel2{
+            top: 77px;
+            left: 206px;
+        }
+        @keyframes Rotation{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes MyCar {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="../im/new/road2.jpeg" alt="road" class="road">
+    <div class="main">
+        <img src="../im/new/car.png" alt="car" class="car">
+        <img src="../im/new/wheel.png" alt="wheel" class="wheel1 wheel">
+        <img src="../im/new/wheel.png" alt="wheel" class="wheel2 wheel">
+    </div>
+</body>
+</html>

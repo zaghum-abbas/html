@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <style>
+        nav{
+            background-color: #5f3b8e;
+            border-radius: 10px;
+        }
+        ol{
+            display: flex;
+            list-style: none;
+            width: 60%;
+            margin: auto;
+            color: white;
+            cursor: pointer;
+        }
+       ol li{
+            flex-grow: 1;
+            padding: 6px;
+            text-align: center;
+        }
+        ol li:hover{
+             background: #bab4b4;
+        }
+        .drop-down-menu{
+            position: relative;
+        }
+        .child-menu,
+        .Grand-child-menu{
+            display: none;
+            position: absolute;
+            background-color:#5f3b8e;
+            text-align: left;
+        }
+        .child-menu li{
+            text-align: left;
+        }
+        .drop-down-menu:hover .child-menu{
+           display: list-item;
+        }
+
+        .child-drop-menu:hover .Grand-child-menu{
+           display: list-item;
+        }
+  .Grand-child-menu{
+      margin-left: 20px;
+  }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>Home</li>
+            <li class="drop-down-menu">
+                Proviences
+            <ol class="child-menu">
+                <li class="child-drop-menu">
+                    Punjab
+                    <ol class="Grand-child-menu">
+                        <li>Faisalabad</li>
+                        <li>Jhang</li>
+                        <li>Lahore</li>
+                        <li>Islamabad</li>
+                    </ol>
+                </li>
+                <li>Sindh</li>
+                <li>KPK</li>
+                <li>Balochistan</li>
+            </ol>
+            </li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ol>
+    </nav>
+</body>
+</html>

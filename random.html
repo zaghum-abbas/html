@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            list-style: none;
+            
+        }
+        li{
+            color: red;
+            display: inline-block;
+        }
+        li:hover{
+            animation: animate 1s linear 0s;
+        }
+    @keyframes animate{
+        0%{
+                border-top: 1px solid red;
+                border-right: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+                border-left: 1px solid transparent;
+        }
+        50%{
+                border-top: 1px solid red;
+                border-right: 1px solid black;
+                border-bottom: 1px solid transparent;
+                border-left: 1px solid transparent;
+        }
+        75%{
+                border-top: 1px solid red;
+                border-right: 1px solid black;
+                border-bottom: 1px solid green;
+                border-left: 1px solid transparent;
+        }
+        100%{
+                border-top: 1px solid red;
+                border-right: 1px solid black;
+                border-bottom: 1px solid green;
+                border-left: 1px solid purple;
+        }
+    }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Home</li>
+    </ol>
+</body>
+</html>

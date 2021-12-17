@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .black-head{
+            background-color: black;
+            width: 100%;
+            height: 36px;
+            text-align: center;
+            padding-top: 4px;
+        }
+        .click{
+            background-color: #eb5556;
+            border-radius: 20px;
+            border: 1px solid black;
+            padding: 6px;
+            color: white;
+        }
+        span{
+            color: white;
+        }
+        ol{
+            background-color: #eb5556;
+            list-style: none;
+            display: flex;
+            margin: 0;
+            width: 80%;
+        }
+        ol li{
+            flex-grow: 1;
+            color: white;
+            padding-top: 15px;
+        }
+        nav{
+            /* padding-top: 15px; */
+            width: 80%;
+            margin: auto;
+        }
+        header{
+            background-color: #eb5556;
+        }
+        .home img{
+            width: 100%;
+            position: absolute;
+        }
+        .container{
+            position: absolute;
+            margin-top: 120px;
+            margin-left: 200px;
+            color: white;
+            width: 300px;
+        }
+        #btn{
+            color: white;
+            background-color: transparent;
+            border-radius: 6px;
+            border:1px solid white;
+           position:relative;
+           top: 10px;
+        }
+       .main-contain{
+           margin: auto;
+           margin-top: 30%;
+           width: 70%;
+           display: flex;
+          
+       }
+       .ex-width{
+           width: 50%;
+       }
+     .black{
+         justify-content: space-evenly;
+         display: flex;
+         margin-top: 40px;
+     }
+     
+        .box{
+           background-color: black;
+           width: 200px;
+           height: 200px;
+           margin-left: 10px;
+           display: inline-block;
+           position: relative;
+       }
+       .circle{
+           position: absolute;
+           border:6px solid white;
+           width: 100px;
+           height: 100px;
+           border-radius: 100px;
+           margin-left: 130px;
+           margin-top: 130px;     
+       }
+       .rectangle{
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           border-left: 50px solid transparent;
+           border-right: 50px solid transparent;
+           border-top: 0px solid transparent;
+           border-bottom: 72px solid white;
+       }
+       .rectangle-black{
+           position: absolute;
+            bottom: 1px;
+            right: 7px;
+            border-left: 41px solid transparent;
+            border-right: 43px solid transparent;
+            border-top: 31px solid transparent;
+            border-bottom: 59px solid black;
+
+       }
+       .triangle{
+           border: 4px solid white;
+           width: 70px;
+           height: 70px;
+           position: absolute;
+           bottom: 0;
+           right: 0;
+           border-bottom: 0px solid transparent;
+           border-right: 0px solid transparent;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="black-head">
+            <button class="click">Click Me to access</button>
+            <span>How we're Responding COVID-19</span>
+        </div>
+        <nav>
+        <ol>
+            <li style="flex-grow: 14;"><img src="../im/new/logo.jpeg" alt=""></li>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Portfolio</li>
+        </ol>
+        </nav>
+    </header>
+    <div class="home">
+        <img src="../im/new/Home.jpeg" alt="Home">
+    </div>
+    <div class="container">
+        <h1>Serving you</h1>
+        <h2>Science 1989.</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi incidunt beatae dolor fugit</p>
+        <button id="btn">More Details</button>
+    </div>
+    <div class="main-contain">
+        <div class="ex-width">
+            <h5>Way to Support</h5>
+            <h2>Support Acme Outdoors.</h2>
+            </div>
+            <div class="ex-width">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem asperiores praesentium id soluta quaerat consectetur, temporibus commodi, eum, explicabo deserunt
+                </p>
+            </div>
+    </div>
+    <div class="black">
+        
+            <div class="box">
+                <div class="circle"> </div>
+        </div>        
+        <div class="box">
+            <div class="rectangle"></div>
+            <div class="rectangle-black"></div>
+        </div>
+        <div class="box">
+            <div class="triangle"></div>
+        </div>
+    </div>
+   
+
+</body>
+</html>

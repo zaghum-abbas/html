@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ol{
+            display: flex;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .Parent li{
+            flex-grow: 1;
+            background-color: blueviolet;
+            text-align: center;
+             padding: 8px;
+            color: white;
+        }
+        .child-menu,
+        /* .grand-child, */
+        .menu{
+            display: none;
+        }
+      ol li:hover{
+            background-color: brown;
+      }
+      .child-drop-down:hover .child-menu,
+      .drop-down:hover .menu{
+          display: list-item;
+          position: absolute;
+          margin-left: 20px;
+      }
+      .grand-child:hover li{
+          display: list-item;
+          position: absolute;
+      }
+      img{
+          margin-top: 10px;
+          position: absolute;
+      }
+      h3{
+          position: relative;
+          left: 150px;  
+      }
+      img.im{
+            float: right;
+      }
+      /* h1{
+          float: left;
+      } */
+    </style>
+</head>
+<body>
+        <nav>
+            <span><h1>Logo</h1></span>
+        <ol class="Parent">
+            <li>Home</li>
+            <li class="drop-down">
+                Proviences
+                    <ol class="menu">
+                        <li class="child-drop-down">
+                            Punjab
+                                <ol class="child-menu">
+                                    <li>Lahore</li>
+                                    <li>Jhang</li>
+                                    <li>Faisalabad</li>
+                                    <li>
+                                        ISB
+                                        <ol class="grand-child">
+                                            <li>Jehlum</li>
+                                            <li>chanab</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                        </li>
+                        <li>Sindh</li>
+                        <li>KPK</li>
+                        <li>Karachi</li>
+                    </ol>
+            </li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Self</li>
+        </ol>
+    </nav>
+    <img src="https://thumbs.dreamstime.com/z/single-page-application-concept-banner-header-developers-computer-smartphone-working-app-tiny-people-spa-web-development-141200913.jpg" alt="business man" width="100%" height="500px">
+    <h3>This is a business man in Pakistan</h3>
+    <h3>This is a business man in Pakistan</h3>
+    <h3>This is a business man in Pakistan</h3>
+    <h3>This is a business man in Pakistan</h3>
+    <img src="../im/new/logo.jfif" alt="business" class="im">
+</body>
+</html>

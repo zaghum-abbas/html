@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* @keyframes back{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: brown;
+    }
+    100%{
+        background-color: cadetblue;
+    }
+        }
+        #ani{
+            background-color: green;
+            width: 100px;
+            height: 500px;
+            animation: back 10s linear 2s;
+        }
+        @keyframes fanChala {
+
+0%{
+    transform: rotate(0deg);
+}
+
+100%{
+    transform: rotate(360deg);
+}
+}
+.fan{
+            animation: fanChala 4s linear 0s  infinite;
+} */
+@keyframes mera{
+    0%   {
+         left:0px; 
+         top:0px;
+        }
+    25%  {
+         left:200px; 
+         top:0px;
+        }
+    50%  {
+         left:200px; 
+         top:200px;
+        }
+    75%  {
+         left:0px;
+          top:200px;
+        }
+    100% {
+         left:0px;
+          top:0px;}
+}
+}
+.jahaz{
+    position: absolute;
+    animation: mera 6s linear 0s;
+}
+    </style>
+</head>
+<body>
+    <img src="../im/new/Jahaz.jpg" alt="jahaz" width="100px" height="50px" class="jahaz">
+
+    <!-- <img src="../im/new/fan.jfif" alt=" fan" width="200px" height="200px" class="fan">
+    <div id="ani"></div> -->
+    
+</body>
+</html>

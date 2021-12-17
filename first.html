@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ol{
+            list-style: none;
+            background-color: aquamarine;
+            padding: 0;
+            display: flex;
+            /* width: 400px; */
+        }
+        .main li{
+            /* flex-grow: 1; */
+            padding: 10px;
+        }
+        li:hover{
+            background-color: red;
+        }
+        .menu{
+            display: none;
+        }
+        .drop:hover .menu{
+            position: absolute;
+            display: block;
+
+        }
+        .child{
+            display: none !important;
+        }
+        li.child-menu:hover ol{
+            position: absolute;
+            display: block !important;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+      <ol class="main">
+          <li>Home</li>
+          <li>Contect</li>
+          <li class="drop">
+              Portfolio
+              <ol class="menu"> 
+                  <li>Zaghum</li>
+                  <li>Abbas</li>
+                  <li class="child-menu">
+                      Ali
+                      <ol class="child">
+                      <li>Zaghum</li>
+                  <li>Abbas</li>
+                  <li>Ali</li>
+                  </ol>
+                    </li>
+                </ol>
+            </li>
+          <li>About Us</li>
+        </ol>
+  </nav>
+</body>
+</html>

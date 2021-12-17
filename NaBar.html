@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        ol{
+            list-style: none;
+            background-color: #f9b301;
+            padding: 0px;
+            display: flex;
+        }
+        .a1 .nav{
+            width: 300px;
+            float: right;
+        }
+         li{
+            padding: 5px;
+            flex-grow: 1;
+            margin-right: 0px;
+        }
+      .drop-down ol{
+            display: none;
+            position: absolute;
+            
+      }
+       .drop-down:hover ol{
+           display: list-item;
+       }
+       li:hover{
+           background-color: turquoise;
+       }
+        .drop-down2  ol{
+            display: none !important;     
+      }
+      .drop-down2:hover ol{
+          display: list-item !important;
+          margin-left: 40px;
+      }
+
+    </style>
+</head>
+<body>
+    <nav class="a1">
+        <ol class="nav">
+            <li>Home</li>
+            <li  class="drop-down">
+                Provience
+                <ol>
+                    <li>Punjab</li>
+                    <li>Sindh</li>
+                    <li class="drop-down2">
+                        Balochistan
+                        <ol>
+                            <li>Punjab</li>
+                            <li>Sindh</li>
+                            <li>Balochistan</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>About</li>
+            <li>Contect</li>
+        </ol>
+    </nav>
+</body>
+</html>
