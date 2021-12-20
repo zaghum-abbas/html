@@ -61,7 +61,7 @@
             </div>
         </div>
     </div>
-    <img src="images/wave1.png" class="bottom-img">
+    <div class="col-md-6 text-center">
 
 </section>
 </body>
